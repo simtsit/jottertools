@@ -1,7 +1,9 @@
-echo "<h2 align=center>Slideshows of " . $url . "</h2><br>";
+<?php
+
+        echo "<h2 align=center>Slideshows of " . $url . "</h2><br>";
 
 
-// This fucntion is counting photos.
+        // This fucntion is counting photos.
 
         function countphotos($slideshow_id) {
                 $photos_url ='http://www.schooljotter.com/slideshowswfs/getxml.php?pfid=' . $slideshow_id;
@@ -22,7 +24,7 @@ echo "<h2 align=center>Slideshows of " . $url . "</h2><br>";
         }
 
 
-// This function is looking for internal links.
+        // This function is looking for internal links.
 
         function checkthis($request_url){
 
