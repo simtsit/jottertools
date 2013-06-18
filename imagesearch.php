@@ -1,5 +1,12 @@
 <?php
 
+        $target_url = $_GET["urltocheck"];      // The page we search... 
+
+        $result_options = $_GET["option"];
+        if(in_array("makelinks", $result_options)) { $makelinks = 1; }
+        if(in_array("showpreview", $result_options)) { $showpreview = 1; }
+
+
         // This function searches a URL for photos
 
         function checkforphotos($request_url){
