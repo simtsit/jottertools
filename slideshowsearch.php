@@ -1,5 +1,5 @@
 <?php
-
+        $url = $_GET["urltocheck"];     // The page we search... 
         echo "<h2 align=center>Slideshows of " . $url . "</h2><br>";
 
 
